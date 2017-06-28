@@ -1,4 +1,4 @@
-package concurrency.akka
+package progscala2.concurrency.akka
 import scala.util.Try
 
 object Messages {

@@ -4,7 +4,7 @@
 		module="specs2-tutorial_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170627123314"
+		publication="20170628105449"
 	>
 		<description>
 		specs2-tutorial
@@ -34,6 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.6" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.asynchttpclient" name="async-http-client" rev="2.0.32" conf="compile->default(compile)"/>
 		<dependency org="org.json4s" name="json4s-jackson_2.10" rev="3.5.2" conf="compile->default(compile)"/>
 		<dependency org="org.scala-lang.modules" name="scala-async_2.10" rev="0.9.5" conf="compile->default(compile)"/>

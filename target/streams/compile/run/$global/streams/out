@@ -1,8 +1,10 @@
-[0m[[0minfo[0m] [0mRunning AsyncExample [0m
+[0m[[0minfo[0m] [0mRunning progscala2.concurrency.akka.AkkaClient [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/scala-2.10/classes[0m
 [0m[[0mdebug[0m] [0m	/Users/kcissell/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/kcissell/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/bundles/akka-actor_2.10-2.1.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/kcissell/.ivy2/cache/com.typesafe/config/bundles/config-1.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/kcissell/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.32.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/kcissell/.ivy2/cache/org.asynchttpclient/async-http-client-netty-utils/jars/async-http-client-netty-utils-2.0.32.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/kcissell/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.46.Final.jar[0m
@@ -30,13 +32,15 @@
 [0m[[0mdebug[0m] [0m	/Users/kcissell/.sbt/boot/scala-2.10.6/lib/scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/kcissell/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.21.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0mInterrupting thread run-main-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted run-main-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread AkkaClient-akka.actor.default-dispatcher-7[0m
+[0m[[0mdebug[0m] [0m	Interrupted AkkaClient-akka.actor.default-dispatcher-7[0m
+[0m[[0mdebug[0m] [0mInterrupting thread AkkaClient-scheduler-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted AkkaClient-scheduler-1[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AkkaClient-akka.actor.default-dispatcher-7 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread AkkaClient-akka.actor.default-dispatcher-7 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-11[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-11[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-13[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-13[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-9[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-9[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

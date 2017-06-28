@@ -3,6 +3,7 @@ name := "specs2-tutorial"
 resolvers += "bintray-banno-oss-releases" at "http://dl.bintray.com/banno/oss"
 
 libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-actor" % "2.1.0",
   "org.asynchttpclient" % "async-http-client" % "2.0.32",
   "org.json4s" %% "json4s-jackson" % "3.5.2",
   "org.scala-lang.modules" %% "scala-async" % "0.9.5",
