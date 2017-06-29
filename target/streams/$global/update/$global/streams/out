@@ -21,21 +21,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.10;2.1.0 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.10;2.1.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/kcissell/.ivy2/local/com.typesafe.akka/akka-actor_2.10/2.1.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-actor_2.10;2.1.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.akka#akka-actor_2.10;2.1.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.pom (2.1.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.1.0!akka-actor_2.10.pom(pom.original) (141ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/kcissell/.ivy2/local/com.typesafe.akka/akka-actor_2.10/2.1.0/bundles/akka-actor_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.1.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.1.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT->com.typesafe.akka#akka-actor_2.10;2.1.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT->com.typesafe.akka#akka-actor_2.10;2.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -58,21 +45,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe#config;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.0.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe#config;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/kcissell/.ivy2/local/com.typesafe/config/1.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe#config;1.0.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe#config;1.0.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom (1.0.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.0.0!config.pom(pom.original) (125ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/kcissell/.ivy2/local/com.typesafe/config/1.0.0/bundles/config.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.0.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.0.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.0.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.1.0->com.typesafe#config;1.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.1.0->com.typesafe#config;1.0.0 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.1.0->com.typesafe#config;1.0.0 [compile->compile][0m
@@ -5043,21 +5017,11 @@
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.6!scala-library.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.0/akka-actor_2.10-2.1.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.1.0!akka-actor_2.10.jar(bundle) (666ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.1.0!akka-actor_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.asynchttpclient#async-http-client;2.0.32!async-http-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-jackson_2.10;3.5.2!json4s-jackson_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-async_2.10;0.9.5!scala-async_2.10.jar(bundle)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.0.0!config.jar(bundle) (136ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.0.0!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.asynchttpclient#async-http-client-netty-utils;2.0.32!async-http-client-netty-utils.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty-codec-http;4.0.46.Final!netty-codec-http.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty-handler;4.0.46.Final!netty-handler.jar[0m
@@ -5094,7 +5058,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scodec#scodec-bits_2.10;1.0.12!scodec-bits_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1827ms :: artifacts dl 822ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 370ms :: artifacts dl 9ms[0m
 [0m[[0mdebug[0m] [0m	report for specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT compile produced in /Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/resolution-cache/reports/specs2-tutorial-specs2-tutorial_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT runtime produced in /Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/resolution-cache/reports/specs2-tutorial-specs2-tutorial_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT test produced in /Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/resolution-cache/reports/specs2-tutorial-specs2-tutorial_2.10-test.xml[0m
@@ -5108,5 +5072,5 @@
 [0m[[0mdebug[0m] [0m	report for specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT docs produced in /Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/resolution-cache/reports/specs2-tutorial-specs2-tutorial_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT pom produced in /Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/resolution-cache/reports/specs2-tutorial-specs2-tutorial_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for specs2-tutorial#specs2-tutorial_2.10;0.1-SNAPSHOT scala-tool produced in /Users/kcissell/Documents/Training/Projects/Scala-Bootcamp5/target/resolution-cache/reports/specs2-tutorial-specs2-tutorial_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1827ms resolve - 822ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (370ms resolve - 9ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
