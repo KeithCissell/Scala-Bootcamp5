@@ -14,16 +14,18 @@ object HybridName {
 import modulework._
 object HybridNameTest {
 
-  // def nameMatch(name: Option[String]): Boolean = name match {
-  // }
+  def nameMatch(name: String): Boolean = name match {
+    case HybridName(f, l) if f == "Cissell" || l == "Cissell" => true
+    case _ => false
+  }
 
   def main(args: Array[String]) = {
     val hyphenName = HybridName.apply("Keith", "Cissell")
-    println(hyphenName)
-    val tupleName = HybridName.unapply(hyphenName)
-    println(tupleName)
-    //val nonHyphen = HybridName.unapply("Georgia")
-    //println(nonHyphen)
+    println(hyphenName + ": " + nameMatch(hyphenName))
+    val HybridName(fName, lName) = hyphenName
+    println(s"First Name: $fName\nLast Name: $lName")
+    val nonHyphen = HybridName.unapply("Georgia")
+    println(nonHyphen)
   }
 
 }
