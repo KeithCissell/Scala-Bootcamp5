@@ -21,8 +21,7 @@ object HttpClient{
       for ((n,v) <- body) request.addFormParam(n, v)
       val response = request.execute().get()
       asyncHttpClient.close()
-      if (response.getStatusCode != 200) error(s"Failed to Post to: $url")
-      else formatResponse(response)
+      formatResponse(response)
     }
 
     def executeHttpGet(url: String): HttpResponse = {
@@ -30,8 +29,7 @@ object HttpClient{
       val request = asyncHttpClient.prepareGet(s"$url")
       val response = request.execute().get()
       asyncHttpClient.close()
-      if (response.getStatusCode != 200) error(s"Failed to Get: $url")
-      else formatResponse(response)
+      formatResponse(response)
     }
 
     def formatResponse(r: Response): HttpResponse = {

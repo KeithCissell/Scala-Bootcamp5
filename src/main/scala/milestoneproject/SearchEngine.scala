@@ -1,12 +1,14 @@
 // src/main/scala/milestoneproject/SearchEngine.scala
 package searchengine
+
 import httpclient.DuckDuckGo._
+import scala.collection.mutable.{ArrayBuffer => AB}
 
 object SearchEngine {
   // A general list of methods to be used by a repository
   trait Repository[A, I] {
     def isEmpty: Boolean
-    def getAll: Seq[A]
+    def getAll: AB[A]
     def get(id: I): Option[A]
     def create(x: A): Unit
     def update(x: A): Unit
@@ -17,22 +19,24 @@ object SearchEngine {
   case class Result(title: String, description: String)
 
   // Holds the query searched and a list of results returned
-  case class Search(value: String, results: Seq[Result] = Seq.empty)
+  case class Search(value: String, results: AB[Result] = AB())
 
   // A list of searches that can be viewed and manipulated
-  case class SearchHistory(private var history: Seq[Search] = Seq.empty)
+  case class SearchHistory(private var history: AB[Search] = AB())
       extends Repository[Search,Int] {
     def isEmpty: Boolean = history.isEmpty
     def contains(s: Search): Boolean = history.contains(s)
-    def getAll: Seq[Search] = history
-    def get(id: Int): Option[Search] = if (id < history.length) Some(history(id)) else None
-    def create(s: Search): Unit = history = history :+ s
+    def getAll: AB[Search] = history
+    def get(id: Int): Option[Search] = {
+      if (id >= 0 && id < history.length) Some(history(id)) else None
+    }
+    def create(s: Search): Unit = history += s
     def update(s: Search): Unit = {
-      for (i <- 0 to (history.length - 1)) if (history(i).value == s.value) {
-        history = history.updated(i, s)
+      for (i <- 0 until history.length) if (history(i).value == s.value) {
+        history.update(i, s)
       }
     }
-    def delete(s: Search): Unit = history = history.filter(_ != s)
+    def delete(s: Search): Unit = history -= s
   }
 
   // A search engine user that holds name, password and search history
@@ -54,16 +58,16 @@ object SearchEngine {
 
   // A group of search engine users
   class UserGroup(private var users: Map[String,User] = Map.empty) extends Repository[User,String] {
-    // Allows UserGroup to be constructed with a Seq of users
-    def this(users: Seq[User]) {
+    // Allows UserGroup to be constructed with a ArrayBuffer of users
+    def this(users: AB[User]) {
       this((users.map(_.name) zip users).toMap)
     }
     def isEmpty: Boolean = users.isEmpty
     def contains(id: String): Boolean = users.contains(id)
-    def getAll: Seq[User] = users.values.toSeq
+    def getAll: AB[User] = users.values.to[AB]
     def get(id: String): Option[User] = if (users.contains(id)) Some(users(id)) else None
     def create(u: User): Unit = {
-      if (users.contains(u.name)) error(s"User already exists: $u.name")
+      if (users.contains(u.name)) println(s"User already exists: $u.name")
       else users = users + (u.name -> u)
     }
     def update(u: User): Unit = users = users + (u.name -> u)
@@ -72,7 +76,7 @@ object SearchEngine {
 
   // A search engine that holds a UserGroup
   class SearchEngine(val name: String, var userGroup: UserGroup = new UserGroup()) {
-    def engineSearchHistory: Seq[Search] = {
+    def engineSearchHistory: AB[Search] = {
       (for (usr <- userGroup.getAll) yield usr.searchHistory.getAll).flatten
     }
     def mostFrequentSearch: String = {

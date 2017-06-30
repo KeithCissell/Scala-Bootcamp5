@@ -96,7 +96,7 @@ object AkkaClient {
     |""".stripMargin
 
   private def exit(message: String, status: Int): Nothing = {
-    for (sys <- system) sys.shutdown()
+    for (sys <- system) sys.terminate()
     println(message)
     sys.exit(status)
   }

@@ -1,10 +1,13 @@
 // src/main/scala/modulework/Http-Client/DuckDuckGo.scala
 package httpclient
+
 import httpclient.HttpClient._
 import searchengine.SearchEngine._
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 import scala.util.matching.Regex
+import scala.collection.mutable.{ArrayBuffer => AB}
+
 
 object DuckDuckGo {
 
@@ -13,7 +16,7 @@ object DuckDuckGo {
     def searchDDG(query: String): Search = {
       val requestBody = Map("q" -> s"$query", "format" -> "json")
       val response = executeHttpPost("https://duckduckgo.com", requestBody)
-      val results = extractResults(response.body)
+      val results = extractResults(response.body).to[AB]
       Search(query, results)
     }
 
